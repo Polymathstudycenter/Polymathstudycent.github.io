@@ -1,0 +1,252 @@
+.header-main {
+    display: none;
+}
+.button-more {
+    display: inline-block;
+    margin-top: 30px;
+    background: rgb(121, 188, 250);
+    color: white;
+    width: 158px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 3px 0 3px;
+    padding-top: 10px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/*styling the footer*/
+footer {
+    display: none;
+}
+/*styling the forms*/
+/* The p tag in the jamb and waec form*/
+.main div p{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+fieldset {
+    background-color: skyblue;
+    padding: 15px;
+    border-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+legend {
+    background-color: skyblue;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+fieldset div label, fieldset div input[type="text"], fieldset div select {
+    display: inline-block;
+    vertical-align: top;
+}
+fieldset div label {
+    width: 200px;
+    padding: 5px;
+}
+fieldset div input[type="text"], fieldset div select {
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.form-button {
+    display: none;
+}
+
+/*The media queries for */
+
+@media (max-width: 1484px) {
+    .nav li a {
+        font-size: 1.2em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 1287px) {
+    .nav li a {
+        font-size: 1.2em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.25em;
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+}
+@media (max-width: 1238px) {
+    .nav li a {
+        font-size: 1.12em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.15em;
+    }
+}
+@media (max-width: 1139px) {
+    .main {
+        max-width: 900px;
+    }
+    .nav li a {
+        font-size: 1.11em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.11em;
+    }
+    .button-more {
+        width: 140px;
+        text-align: center;
+        font-size: 1.05em;
+    }
+    .reset {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1100px) {
+    .nav li a {
+        font-size: 1.1em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.1em;
+    }
+    .main {
+        max-width: 600px;
+    }
+    .main .container .column-main {
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: left;
+    }
+    .main .container .column-main p {
+        text-align: left;
+        letter-spacing: .5px;
+        line-height: 28px;
+    }
+    .reset {
+        margin-top: 20px;
+    }
+    .button-more {
+        margin-bottom: 20px;
+    
+    }
+    .column-main h2 {
+        font-size: 1.9em;
+    }
+    footer {
+        margin-top: 250px;
+    }
+    .column-main .first-heading {
+        margin-top: 50px;
+    }
+    fieldset div input[type="text"], fieldset div select {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1090px) {
+    .nav li a {
+        font-size: 1em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1em;
+    }
+}
+@media (max-width: 992px){
+    .logo {
+        width: 100%;
+        float: none;
+        font-size: 5em;
+    }
+    .nav {
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav li a{
+        width: 24.5%;
+        margin-right: .2%;
+    }
+}
+@media (max-width: 826px) {
+    .nav {
+        float: none;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .nav li a{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 705px) {
+    .header-sub {
+        font-size: 1.3em;
+    }
+    .logo {
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 620px) {
+    .header-sub {
+        font-size: 1.1em;
+    }
+    .logo {
+        font-size: 4em;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+    .column-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 530px) {
+    .header-sub {
+        font-size: .8em;
+    }
+}
+@media (max-width: 450px) {
+    .header-sub {
+        font-size: .6em;
+    }
+    .nav {
+        float: none;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;;
+    }
+    .nav li a{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+    }
+    fieldset div label, fieldset div input[type="text"], fieldset div select {
+        display: block;
+    }
+    fieldset div label {
+        width: 100%;
+    }
+    fieldset div input[type="text"], fieldset div select {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,384 @@
+/*general formatting for the pages*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clear:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*styling the general lookout for a desktop first outlook*/
+/*styling the header*/
+header {
+    background-color: rgb(121, 188, 250);
+    text-transform: uppercase;
+    background-size: cover;
+}
+.nav {
+    float: right;
+    width: 85%;
+    margin-top: 20px;
+}
+.nav li a{
+    list-style: none;
+    float:  left;
+    width: 24%;
+    border: 1px solid white;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: .5%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px white;
+}
+.logo {
+    width: 10%;
+    float: left;
+    font-size: 4em;
+    height: 80px;
+    text-shadow: 3px 3px 5px black;
+}
+.nav li a:hover, .nav li a:focus {
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 1.5em;
+}
+.logo a:hover, .logo a:focus {
+    font-size: 1.1em;
+}
+.header-main {
+    width: 100%;
+}
+.header-main a {
+    color: white;
+    display: block;
+}
+.header-sub {
+    text-align: center;
+    clear: both;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*Styling the main content of the homepage*/
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+p {
+    padding: 10px;
+}
+ol {
+    margin-left: 20px;
+}
+.guideline-main {
+    font-size: 1.2em;
+    line-height: 20px;
+}
+.guideline-main h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.guideline-main ol {
+    list-style-type: circle;
+}
+.column-main {
+    width: 32%;
+    margin: 15px 0.66666% 15px 0.666666%;
+    line-height: 25px;
+    float: left;
+}
+.button-more {
+    display: inline-block;
+    margin-top: 30px;
+    background: rgb(121, 188, 250);
+    color: white;
+    width: 158px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 3px 0 3px;
+    padding-top: 10px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/*styling the footer*/
+footer {
+    clear: both;
+    background-color: skyblue;
+    background-size: cover;
+    margin-top: 700px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+footer li span {
+    display: inline-block;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+footer.form-footer {
+    margin-top: 100px;
+}
+.control-guideline {
+    margin-top: 200px;
+}
+/*styling the forms*/
+/* The p tag in the jamb and waec form*/
+.main div p{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+fieldset {
+    background-color: skyblue;
+    padding: 15px;
+    border-color: white;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+legend {
+    background-color: skyblue;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+fieldset div label, fieldset div input[type="text"], fieldset div select {
+    display: inline-block;
+    vertical-align: top;
+}
+fieldset div label {
+    width: 200px;
+    padding: 5px;
+}
+fieldset div input[type="text"], fieldset div select {
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.form-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: rgb(121, 188, 250);
+    color: white;
+    width: 150px;
+    font-size: 1.2em;
+    height: 50px;
+    border-radius: 15px;
+}
+
+/*The media queries for */
+
+@media (max-width: 1484px) {
+    .nav li a {
+        font-size: 1.2em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 1287px) {
+    .nav li a {
+        font-size: 1.2em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.25em;
+        text-align: center;
+        padding: 15px 0 0 0;
+    }
+}
+@media (max-width: 1238px) {
+    .nav li a {
+        font-size: 1.12em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.15em;
+    }
+}
+@media (max-width: 1139px) {
+    .main {
+        max-width: 900px;
+    }
+    .nav li a {
+        font-size: 1.11em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.11em;
+    }
+    .button-more {
+        width: 140px;
+        text-align: center;
+        font-size: 1.05em;
+    }
+    .reset {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1100px) {
+    .nav li a {
+        font-size: 1.1em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1.1em;
+    }
+    .main {
+        max-width: 600px;
+    }
+    .main .container .column-main {
+        width: 100%;
+        margin: 0;
+        float: none;
+        text-align: left;
+    }
+    .main .container .column-main p {
+        text-align: left;
+        letter-spacing: .5px;
+        line-height: 28px;
+    }
+    .reset {
+        margin-top: 20px;
+    }
+    .button-more {
+        margin-bottom: 20px;
+    
+    }
+    .column-main h2 {
+        font-size: 1.9em;
+    }
+    footer {
+        margin-top: 250px;
+    }
+    .column-main .first-heading {
+        margin-top: 50px;
+    }
+    fieldset div input[type="text"], fieldset div select {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1090px) {
+    .nav li a {
+        font-size: 1em;
+    }
+    .nav li a:hover, .nav li a:focus {
+        font-size: 1em;
+    }
+}
+@media (max-width: 992px){
+    .logo {
+        width: 100%;
+        float: none;
+        font-size: 5em;
+    }
+    .nav {
+        float: none;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav li a{
+        width: 24.5%;
+        margin-right: .2%;
+    }
+}
+@media (max-width: 826px) {
+    .nav {
+        float: none;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .nav li a{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 705px) {
+    .header-sub {
+        font-size: 1.3em;
+    }
+    .logo {
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+}
+@media (max-width: 620px) {
+    .header-sub {
+        font-size: 1.1em;
+    }
+    .logo {
+        font-size: 4em;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+    .column-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 530px) {
+    .header-sub {
+        font-size: .8em;
+    }
+}
+@media (max-width: 450px) {
+    .header-sub {
+        font-size: .6em;
+    }
+    .nav {
+        float: none;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;;
+    }
+    .nav li a{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+    }
+    fieldset div label, fieldset div input[type="text"], fieldset div select {
+        display: block;
+    }
+    fieldset div label {
+        width: 100%;
+    }
+    fieldset div input[type="text"], fieldset div select {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}

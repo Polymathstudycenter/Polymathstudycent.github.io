@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Polymath Study Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./_css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <script src="./_js/jquery-1.6.3.min.js"></script>
+    <script src="./_js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#dateOfBirth').datepicker({
+               changeMonth: true,
+               changeYear: true,
+               yearRange: '1980:2010'
+            });
+            $('input[type=button]').click(function() {
+                $('input').attr('disabled', true);
+            });//end datepicker
+        });//end ready 
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <p class="logo"><a href="index.html">PSc</a></p>
+            <ul class="nav">
+                <li><a href="waecreg.html">wassce Registration</a></li>
+                <li><a href="jambreg.html">utme Registration</a></li>
+                <li><a href="course-guildline.html">Course Guideline</a></li>
+                <li><a href="institution-guildline.html">institution Guideline</a></li>
+            </ul>
+        </div>
+        <div class="header-sub correction">
+            <h1>Polymath Study Center</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <p>Welcome to Polymath's Online Jamb Registration. Make sure to fill the form correctly. If there is something you don't understand, speak to one of us, so as to ensure a smooth online Registration.</p>
+            <p><strong>Note:</strong> We strongly recommend that you fill the form through the guidiance of one of our <strong><em>masters present.</em></strong></p>
+        </div>
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div>
+                    <label for="name">Names(Firstname first)</label>
+                    <input type="text" name="name" maxlength="100" id="name" placeholder="e.g Adekunle Ciroma">
+                </div>
+               <div>
+                    <label for="res-address">Residential Address</label>
+                    <input type="text" name="res-address" maxlength="200" id="res-address">
+               </div>
+               <div>
+                    <label for="perm-address">Permanent Address</label>
+                    <input type="text" name="perm-address" maxlength="200" id="perm-address">
+               </div>
+                <div>
+                    <label for="telephone">Phone Number</label>
+                    <input type="text" name="telephone" maxlength="11" id="telephone" placeholder="080111222333">
+                </div>
+                <div>
+                    <label for="Email">Email Address</label>
+                    <input type="text" name="Email" maxlength="50" id="Email" placeholder="mailme@polymathstudycenter.com">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input id="dateOfBirth" type="text" name="dateOfBirth" placeholder="12/12/1980">
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="stateOfOrigin">State Of Origin</label>
+                    <select id="stateOfOrigin" name="stateOfOrigin">
+                        <option value="Abia">Abia</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Calabar">Calabar</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lga">LGA of Origin</label>
+                    <input id="lga" type="text" name="lga" placeholder="Enter your local government area">
+                </div>
+                <div>
+                    <label for="hometown">Hometown</label>
+                    <input id="hometown" name="hometown" type="text" placeholder="Enter your hometown">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>School And Course Choice</legend>
+                <div>
+                    <label for="uni">University</label>
+                    <input id="uni" name="University" type="text" placeholder="University of Nigeria, Nsukka">
+                </div>
+                <div>
+                    <label for="poly">Polytechnic</label>
+                    <input id="poly" type="text" name="Polytechnic" placeholder="Federal Polytechnic, Nekede">
+                </div>
+               <div>
+                    <label for="coe">College of Education</label>
+                    <input id="coe" type="text" name="College" placeholder="Alvan Ikoku College of Education">
+               </div>
+                <div>
+                    <label for="tsch">Technical</label>
+                    <input id="tsch" type="text" name="Technical" placeholder="Technical College, Nkpor">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Utme Subjects Selection</legend>
+                <p>Tick the subjects to be taken in your Wassce</p>
+                <label for="maths">
+                    <span>General Mathematics</span>
+                    <input type="checkbox" id="maths" name="waec-subjects[]">
+                </label>
+                <label for="Eng">
+                    <span>English Language</span>
+                    <input type="checkbox" name="waec-subjects[]" id="Eng" checked>
+                </label>
+                <label for="phy">
+                    <span>Phyics</span> <input type="checkbox" name="waec-subjects[]" id="phy">
+                </label>
+                <label for="chem">
+                    <span>Chemistry</span> <input type="checkbox" name="waec-subjects[]" id="chem">
+                </label>
+                <label for="bio">
+                    <span>Biology</span> <input type="checkbox" name="waec-subjects[]" id="bio">
+                </label>
+                <label for="civic">
+                    <span>Civic Education</span> <input type="checkbox" name="waec-subjects[]" id="civic" >
+                </label>
+                <label for="agric">
+                    <span>Agricultural Science</span> <input type="checkbox" name="waec-subjects[]" id="agric">
+                </label>
+                <label for="anihus">
+                   <span>Animal Husbandry</span> <input type="checkbox" name="waec-subjects[]" id="anihus">
+                </label>
+                <label for="econs">Economics
+                    <input type="checkbox" name="waec-subjects[]" id="econs">
+                </label>                   
+                <label for="gov">
+                    <span>Government</span> <input type="checkbox" name="waec-subjects[]" id="gov">
+                </label>                   
+                <label for="commerce">
+                    <span>Commerce</span> <input type="checkbox" name="waec-subjects[]" id="commerce">
+                </label>                 
+                <label for="hist">
+                    <span>History</span> <input type="checkbox" name="waec-subjects[]" id="hist">
+                </label>                  
+                <label for="acct">
+                    <span>Principles of Accounting</span> <input type="checkbox" name="waec-subjects[]" id="acct">
+                </label>                 
+                <label for="igbo">
+                    <span>Igbo Language</span> <input type="checkbox" name="waec-subjects[]" id="igbo">
+                </label>                   
+                <label for="nutr">
+                    <span>Human Nutrition</span> <input type="checkbox" name="waec-subjects[]" id="nutr">
+                </label>                    
+                <label for="fmaths">
+                    <span>Further Mathematics</span> <input type="checkbox" name="waec-subjects[]" id="fmaths">
+                </label>                   
+                <label for="comp">
+                    <span>Computer Sciences</span> <input id="comp" name="waec-subjects[]" type="checkbox">
+                </label>       
+            </fieldset>
+            <input type="button" class="form-button" value="submit">
+        </form>
+    </main>
+    <footer class="form-footer">
+        <ul>
+            <li>You can contact us through:</li>
+            <li><span>Whatsapp</span>08034030414</li>
+            <li><span >Phone Call</span>09027676853, 08034247272</li>
+            <li><a href="tomail:princecee15@gmail.com"><span>Email</span>princecee15@gmail.com</a></li>
+        </ul>
+    </footer>
+</body>
